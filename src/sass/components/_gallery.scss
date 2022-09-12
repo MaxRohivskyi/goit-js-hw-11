@@ -1,0 +1,58 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding-top: 75px;
+    margin-left: calc(-1 * 15px);
+}
+
+.photo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex-basis: calc(25% - 50px);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 50);
+}
+
+.photo-url {
+    width: 350px;
+    height: 220px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 50);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 50);
+}
+
+.info-item {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    padding: 10px;
+    margin-top: 10px;
+
+    color: rgb(0, 0, 50);
+}
+
+.info-item:not(:last-child) {
+    margin-right: 10px;
+}
