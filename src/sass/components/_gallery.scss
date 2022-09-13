@@ -22,13 +22,13 @@
     background-repeat: no-repeat;
     
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgb(0, 0, 50);
+    box-shadow: 5px 5px 10px rgb(224, 224, 224);
 }
 
 .photo-url {
     width: 350px;
     height: 220px;
-    box-shadow: 5px 5px 10px rgb(0, 0, 50);
+    box-shadow: 5px 5px 10px rgb(224, 224, 224);
 }
 
 .info {
@@ -39,7 +39,7 @@
     margin-bottom: 15px;
     
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgb(0, 0, 50);
+    box-shadow: 5px 5px 10px rgb(224, 224, 224);
 }
 
 .info-item {
@@ -50,7 +50,7 @@
     padding: 10px;
     margin-top: 10px;
 
-    color: rgb(0, 0, 50);
+    color: rgb(0, 0, 100);
 }
 
 .info-item:not(:last-child) {
