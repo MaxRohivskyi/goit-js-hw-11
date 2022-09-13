@@ -21,6 +21,10 @@ const apiService = new ImgApiService();
 
 function onSearch(e) {
     e.preventDefault();
+    
+    if (this.searchQuery.value === '') {
+        return Notify.failure('Please fill in the input field!');
+    };
      
     apiService.query = e.currentTarget.elements.searchQuery.value;
     apiService.resetPage();
@@ -37,9 +41,9 @@ function totalHitsNotification(response) {
     Notify.info(`Hooray! We found ${response.data.totalHits} images.`);
 };
 
-async function onLoadMore() {
-    await apiService.incrementPage();
-    await apiService.fetchImg().then(renderImageCard);
+function onLoadMore() {
+    apiService.incrementPage();
+    apiService.fetchImg().then(renderImageCard);
     gallerySimpleLightbox.refresh();
 };
 
